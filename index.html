@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    full screen slider and responsive navigation bar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div id="topnav" class="navbar">
+    <a href="#" class="logo">
+      Food
+      <span style="color: red">Club</span>
+    </a>
+    <div class="navbar-right menu">
+      <a href="#" class="active">
+        Home
+      </a>
+      <a href="#">
+        About
+      </a>
+      <a href="#">
+        Menu
+      </a>
+      <a href="#">
+        Chefs
+      </a>
+      <a href="#">
+        Contact
+      </a>
+    </div>
+    <div class="navbar-right">
+      <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="slideshow-container" class="slideshow-container">
+    <div class="slide-item bgimg fade" style="background-image: url('assets/BanhMi_NgonVietnam01.jpg');">
+      <div class="caption">
+        <h2>
+          Special Burger
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam minus labore ullam eos asperiores
+          laborum, sequi ad, enim corrupti vitae. Sapiente, delectus velit nobis illum ducimus voluptate corporis
+          consequatur!
+        </p>
+        <button>
+          Order now
+        </button>
+      </div>
+    </div>
+
+    <div class="slide-item bgimg fade" style="background-image: url('assets/maxresdefault.jpg');">
+      <div class="caption">
+        <h2>
+          Noodles
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque nostrum beatae debitis minima,
+          blanditiis, optio ad reprehenderit eius quia et dignissimos. Eveniet, sit consectetur! Mollitia similique
+          repellendus eos fugiat!
+        </p>
+        <button>
+          Order now
+        </button>
+      </div>
+    </div>
+
+    <div class="slide-item bgimg fade" style="background-image: url('assets/vy-huynh-rcHHKG01IPY-unsplash.jpg');">
+      <div class="caption">
+        <h2>
+          Special Soup
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iste odio incidunt dolorem asperiores
+          quibusdam nemo necessitatibus esse doloremque et, aperiam fuga tempore veniam rem recusandae voluptatem quia
+          non corrupti?
+        </p>
+        <button>
+          Order now
+        </button>
+      </div>
+    </div>
+
+    <div id="slide-control" class="slide-control">
+      <span class="dot" onclick="chooseSlide(0)"></span>
+      <span class="dot" onclick="chooseSlide(1)"></span>
+      <span class="dot" onclick="chooseSlide(2)"></span>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
